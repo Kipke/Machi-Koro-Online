@@ -1,0 +1,14 @@
+{
+  "name": "machi_koro_online",
+  "version": "0.0.1",
+  "description": "An online version of the Machi Koro board game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bjorn Molenmaker",
+  "license": "ISC",
+  "dependencies": {
+    "express.io": "^1.1.13"
+  }
+}
