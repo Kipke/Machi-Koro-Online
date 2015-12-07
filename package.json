@@ -2,13 +2,37 @@
   "name": "machi_koro_online",
   "version": "0.0.1",
   "description": "An online version of the Machi Koro board game",
-  "main": "app.js",
+  "homepage": "https://github.com/Kipke/Machi-Koro-Online",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start",
+    "posttest": "start \"\" \"tests/results/coverage/PhantomJS 1.9.8 (Windows 8 0.0.0)/index.html\" && start tests/results/units.html"
   },
   "author": "Bjorn Molenmaker",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.4.7",
     "express.io": "^1.1.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kipke/Machi-Koro-Online.git"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.7",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-coverage": "^0.5.3",
+    "karma-htmlfile-reporter": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-nodeunit": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-requirejs": "^0.2.2",
+    "nodeunit": "^0.9.1",
+    "phantomjs": "^1.9.18",
+    "requirejs": "^2.1.22"
+  },
+  "bugs": {
+    "url": "https://github.com/Kipke/Machi-Koro-Online/issues"
   }
 }
