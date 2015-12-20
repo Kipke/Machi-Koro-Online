@@ -5,18 +5,21 @@
   "homepage": "https://github.com/Kipke/Machi-Koro-Online",
   "main": "server/server.js",
   "scripts": {
-    "test": "karma start",
-    "posttest": "start \"\" \"tests/results/coverage/PhantomJS 1.9.8 (Windows 8 0.0.0)/index.html\" && start tests/results/units.html"
+    "test": "karma start & start \"\" \"tests/results/coverage/PhantomJS 1.9.8 (Windows 8 0.0.0)/index.html\" && start tests/results/units.html"
   },
   "author": "Bjorn Molenmaker",
   "license": "ISC",
-  "dependencies": {
-    "angular": "^1.4.7",
-    "express.io": "^1.1.13"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Kipke/Machi-Koro-Online.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kipke/Machi-Koro-Online/issues"
+  },
+  "dependencies": {
+    "angular": "^1.4.7",
+    "express.io": "^1.1.13",
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.7",
@@ -30,9 +33,7 @@
     "karma-requirejs": "^0.2.2",
     "nodeunit": "^0.9.1",
     "phantomjs": "^1.9.18",
-    "requirejs": "^2.1.22"
-  },
-  "bugs": {
-    "url": "https://github.com/Kipke/Machi-Koro-Online/issues"
+    "requirejs": "^2.1.22",
+    "unit.js": "^2.0.0"
   }
 }
